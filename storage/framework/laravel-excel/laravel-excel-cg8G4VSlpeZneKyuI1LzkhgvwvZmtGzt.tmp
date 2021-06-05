@@ -1,0 +1,28 @@
+/*changed by Mugesh start*/
+/*nav menu arrow*/
+.main-menu ul>li.submenus:first-child::after {
+    top: 30% !important;
+}
+li.submenus::after {
+	top: 0px !important;
+}
+/*top bar third span*/
+.top_left span:nth-child(3) {
+    color: #395a7a;
+    float: right;
+	font-size: 14px  !important;
+	margin-top: 1px  !important;
+	margin-right: -87px !important;
+}
+
+@media only screen and (max-width: 767px) {
+	.top_left span:nth-child(3) { 
+		float: none !important;
+	}
+}
+@media only screen and (max-width: 449px) {
+	.top_left span:nth-child(3) { 
+		margin: auto !important;
+	}	
+}
+/*changed by Mugesh end*/
