@@ -20,7 +20,7 @@ class CreateEmployeesTable extends Migration
             $table->string('employee_department');
             $table->string('employee_age');
             $table->string('employee_experience');
-            $table->string('userid');
+            $table->string('user_id');
             $table->timestamps();
         });
     }

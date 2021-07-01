@@ -23,6 +23,9 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('admin/index');
 })->name('dashboard');
 
+Route::get('/emp',[UserController::class,'getemployee'])->name('emp');
+Route::get('/emp1',[EmployeeController::class,'getemployee'])->name('emp1');
+
 Route::middleware(['auth'])->group(function () {
 
     // user Route Here

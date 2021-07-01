@@ -27,6 +27,14 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function getemployee()
+    {
+         return $emp=User::find(1)->employee;
+        //  foreach($emp as $val)
+        //  {
+        //      print_r($val);
+        //  }
+    }
     public function create()
     {
         //

@@ -37,6 +37,10 @@ class EmployeeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function getemployee()
+    {
+        return $emp=Employee::find(1)->user;
+    }
     public function create(Request $request)
     {
     
@@ -133,7 +137,7 @@ class EmployeeController extends Controller
             $employee->employee_department=$request->employee_department;
             $employee->employee_age=$request->employee_age;
             $employee->employee_experience=$request->employee_experience;
-            $employee->userid=$request->userid;
+            $employee->user_id=$request->userid;
             $employee->save();
             return response()->json(['success'=>'Employee saved successfully.']);
         }
